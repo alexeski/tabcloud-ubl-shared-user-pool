@@ -10,6 +10,8 @@
 
  Note: Sharing users in Tableau is only allowed with Usage Based License 
 
+ ![Alt text](architecture.png?raw=true)
+
 How to use this:
 
 1) Create an environment file .env in the root folder of this repo with your own Connected App details following this syntax:
