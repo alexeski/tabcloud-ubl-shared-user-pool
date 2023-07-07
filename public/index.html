@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <!-- Tableau v3 JS API -->
+    <script
+      type="module"
+      src="https://dub01.online.tableau.com/javascripts/api/tableau.embedding.3.latest.js"
+    ></script>
+
+    <script>
+      var jwt, viz;
+      document.addEventListener("DOMContentLoaded", go());
+
+      function go() {
+        var wurl =
+          "https://dub01.online.tableau.com/t/eskissite/views/SuperstoreDashboard/SuperstoreDashboard";
+
+        fetch("/gimmeJWT")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            if (data.error) {
+              let tp = "<br><br>" + data.error;
+              document.getElementById("dash").innerHTML += tp;
+            } else {
+              jwt = data.token;
+              //document.getElementById("jwt").value = jwt;
+              let tp = `
+                        <tableau-viz id="tableauViz" src="${wurl}"
+                            token="${data.token}"
+                            toolbar="hidden" hide-tabs>
+                        </tableau-viz>`;
+              document.getElementById("dash").innerHTML = tp;
+              viz = document.getElementById("tableauViz");
+              viz.addEventListener("firstinteractive", async (event) => {
+                // call methods to run immediately after loading
+                sheet = viz.workbook.activeSheet;
+                console.log(sheet.name);
+                console.log(viz.src);
+              });
+            }
+          });
+      }
+    </script>
+  </head>
+  <body style="margin: auto; width: 75%; padding: 30px; background-color: dimgray;"">
+    <div id="dash"></div>
+  </body>
+</html>
