@@ -20,7 +20,7 @@ clientId = "<connected-app-id>"
 secretId =  "<secret-id>"
 secretValue = "<secret-value>"
 scope = "tableau:views:embed, tableau:views:authoring"
-userIds =  "user1@company.com, user2@company.com, user3@company.com, user4@company.com" 
+userIds =  "system1@dummy.com, system2@dummy.com, system@dummy.com, system4@dummy.com" 
 ```
 2) Add your own Tableau Viz url in line 15 of public/index.html
 
