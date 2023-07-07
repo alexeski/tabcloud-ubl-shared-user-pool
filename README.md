@@ -1,4 +1,4 @@
-# TabCloud UBL shared pool of users demo
+# Tableau Cloud UBL shared user pool demo
  
  Demo Node app with Tableau Embed front-end showcasing how to rotate Tableau Cloud user logins with jwt auth (Connected Apps).
 
@@ -8,6 +8,7 @@
 
  _Note: Sharing users in Tableau is only allowed with Usage Based License!_
 
+ **Solution Architecture**:
  ![Alt text](architecture.png?raw=true)
 
 How to use this app:
