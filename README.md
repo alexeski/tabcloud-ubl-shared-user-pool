@@ -18,7 +18,7 @@ How to use this app:
 clientId = "<connected-app-id>"
 secretId =  "<secret-id>"
 secretValue = "<secret-value>"
-scope = "tableau:views:embed, tableau:views:authoring"
+scope = "tableau:views:embed, tableau:views:embed_authoring"
 userIds =  "system1@dummy.com, system2@dummy.com, system@dummy.com, system4@dummy.com" 
 ```
 
