@@ -1,4 +1,4 @@
-# TabCloud_UBL_shared_user_demo
+# TabCloud UBL shared pool of users demo
  
  Demo Node app with front-end showcasing how to rotate Tableau Cloud user logins with jwt auth (Connected Apps).
 
