@@ -38,7 +38,7 @@ app.listen(port, function () {
 });
 
 app.get("/", function (req, res) {
-  res.send("App is running on http://localhost:3001/");
+  res.send("App is running on http://localhost:3000/index.html");
 });
 
 //
