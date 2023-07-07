@@ -13,20 +13,24 @@
 How to use this:
 
 1) Create an environment file .env in the root folder of this repo with your own Connected App details following this syntax:
-
+```
 clientId = "<connected-app-id>"
 secretId =  "<secret-id>"
 secretValue = "<secret-value>"
 scope = "tableau:views:embed, tableau:views:authoring"
 userIds =  "user1@company.com, user2@company.com, user3@company.com, user4@company.com" 
-
+```
 2) Add your own Tableau Viz url in line 15 of public/index.html
 
 3) Install the necessary libs 
+```
 npm install
+```
 
 4) Run the Node back-end server
+```
 node index.js
+```
 
 5) Access the front-end at http://localhost:3000/index.html
 
