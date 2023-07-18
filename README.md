@@ -20,7 +20,7 @@ clientId = "<connected-app-id>"
 secretId =  "<secret-id>"
 secretValue = "<secret-value>"
 scope = "tableau:views:embed, tableau:views:embed_authoring"
-userIds =  "system1@dummy.com, system2@dummy.com, system@dummy.com, system4@dummy.com" 
+userIds =  "system1@dummy.com, system2@dummy.com, system@3dummy.com, system4@dummy.com" 
 ```
 
 3) Update line 15 public/index.html with your own viz url, following this syntax:
